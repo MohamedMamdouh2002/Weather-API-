@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>Weather</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#Weather">
+    <nav class="navbar navbar-expand-xl py-4 navbar-dark ">
+        <div class="container ">
+          <a class="navbar-brand fs-5" href="#Weather"><i class="fa-solid fa-cloud-moon-rain fs-3  mx-1"></i>Weather <p class="p-nav ms-5">tagline goes here</p></a>
+          <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse m-auto" id="navbarNav">
+            <ul class="navbar-nav ms-auto gap-5 px-3 pt-3 ">
+              <li class="nav-item">
+                <a class="nav-link Home  px-3" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link News  px-3" href="#News">News</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link Livecamera px-3" href="#Livecamera">Live camera</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link Photos px-3" href="#Photos">Photos</a>
+                </li>
+              <li class="nav-item ">
+                <a class="nav-link Contact px-3" href="#Contact">Contact</a>
+                </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="Home" class=" d-flex justify-content-center pt-5 ">
+        <div class="row  layout">
+          <div class="col-12">
+
+              <div class="searchdflex d-flex">
+                
+                <input type="search" class=" form-control " oninput="searchWeather()" id="cityInput" placeholder="Find your location....">
+                <button class="bttn" >Find</button>
+              </div>
+              
+              <div class="row text-white mt-5 mb-5 ms-3 g-0" id="row">
+              </div>
+          </div>
+        </div>
+      </section>
+      <footer class=""> 
+          <div class="row ms-2 ps-5">
+            <div class="col-sm-9 ">
+              <div class="footer d-flex pt-3">
+                <input type="search" class=" form-control" placeholder="Find your location....">
+                <button class="bttn">Subscribe</button>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="footer d-flex pt-3">
+                <div class="links  d-flex gap-2">
+                <i class="fa-brands fa-facebook-f d-flex align-items-center justify-content-center"></i>
+                <i class="fa-brands fa-twitter d-flex align-items-center justify-content-center"></i>
+                <i class="fa-brands fa-google d-flex align-items-center justify-content-center"></i>
+                <i class="fa-brands fa-pinterest d-flex align-items-center justify-content-center"></i>
+              </div>
+            </div>
+            </div>
+            <p class="mt-5 ms-2 text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+          </div>
+      </footer>
+      
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
